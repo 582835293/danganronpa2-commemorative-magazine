@@ -1,14 +1,57 @@
 # 《超级弹丸论破2：再见绝望学园》完全纪念周刊 (50页互动电子杂志)
 
-> **WEEKLY HOPE’S PEAK ARCHIVE · ISSUE NO.77-B**  
-> 一部以日本游戏纪念周刊（如《Fami通》《电击PlayStation》周年特刊）视觉规格打造的 **50页全彩互动式 HTML 电子杂志**。收录官方实机高清 CG、私立希望峰学园第77期生 **18人互动式电子学生手册（e-Handbook）**、**六大学级裁判言弹实演系统** 以及 **群岛全境建筑地理志**。
+<div align="center">
+
+[![Deploy to GitHub Pages](https://github.com/582835293/danganronpa2-commemorative-magazine/actions/workflows/deploy.yml/badge.svg)](https://github.com/582835293/danganronpa2-commemorative-magazine/actions/workflows/deploy.yml)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-ff007f?style=flat&logo=github)](https://582835293.github.io/danganronpa2-commemorative-magazine/)
+[![React 19](https://img.shields.io/badge/React-19.0-61dafb?logo=react)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-8.3-646cff?logo=vite)](https://vitejs.dev/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4-38bdf8?logo=tailwindcss)](https://tailwindcss.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-v7-3178c6?logo=typescript)](https://www.typescriptlang.org/)
+
+### 🌐 静态网站在线体验入口（GitHub Pages）
+### 👉 [**点击此处立即在线访问体验**](https://582835293.github.io/danganronpa2-commemorative-magazine/) 👈
+*（纯前端 SPA 静态托管，免安装、免登录、零依赖即开即读，支持 PC 键盘翻页与移动端触摸交互）*
+
+</div>
 
 ---
 
-## 核心特性
+> **WEEKLY HOPE’S PEAK ARCHIVE · ISSUE NO.77-B**  
+> 一部以日本知名游戏纪念周刊（如《Fami通》《电击PlayStation》周年特刊）最高视觉规格打造的 **50页全彩交互式 HTML 电子杂志**。收录官方实机高清 CG、私立希望峰学园第77期生 **18人互动式电子学生手册（e-Handbook）**、**六大学级裁判言弹实演系统** 以及 **贾巴沃克群岛全境建筑地理志**。
+
+---
+
+## 📸 实机运行实例预览
+
+### 1. 真实周刊双页跨页排版与50页总目录（Spread View）
+还原日本实体游戏周刊的象牙白微黄纸张肌理、中缝书脊渐变阴影、首字下沉（Drop Cap）、双栏正文排版与快速跳页直达轨。
+![周刊双页跨页阅读与总目录](docs/screenshots/01-magazine-spread-view.png)
+
+---
+
+### 2. 第77期生独占专栏与书签夹藏（Character Dossier Spread）
+日向创与狛枝凪斗双页跨页专题：每位学生均独立配有专属评述、官方高清 CG 检视、中日声优台词、以及一键直达电子学生手册按钮。
+![第77期生独占人物专栏](docs/screenshots/02-character-dossier-spread.png)
+
+---
+
+### 3. 六大学级裁判「不间断讨论」言弹论破实演系统（Class Trial Debate）
+在学级裁判卷宗内嵌可游玩的论破模拟系统！读者可装填左轮弹巢（Truth Bullet），瞄准嫌疑人证言中的矛盾高光词句发射言弹，重现「論破 / BREAK!!」破案瞬间。
+![学级裁判言弹论破实演](docs/screenshots/03-class-trial-interactive-debate.png)
+
+---
+
+### 4. 私立希望峰学园 18人互动式电子学生手册（e-Handbook）
+完整收录16名超高校级学生及黑白熊、黑白美档案。支持五维能力雷达图（SVG）、5阶段「希望碎片」通信簿好感度解锁、扭蛋礼物测试及原声台词检视。
+![18人互动式电子学生手册](docs/screenshots/04-e-handbook-radar-system.png)
+
+---
+
+## 🌟 核心特性
 
 1. **真实周刊杂志版式与50页完整内容（P.01 – P.50）**
-   - 支持 **双页跨页（Spread View）** 与 **单页精读（Single Page）** 随时切换，还原实体周刊中缝书脊阴影、象牙白杂志纸张肌理、首字下沉（Drop Cap）、双栏正文排版与底部名言引述（Pull Quote）。
+   - 支持 **双页跨页（Spread View）** 与 **单页精读（Single Page）** 自由切换，还原实体周刊中缝书脊阴影、象牙白杂志纸张肌理、首字下沉（Drop Cap）、双栏正文排版与底部名言引述（Pull Quote）。
    - 支持键盘 `←` / `→` 方向键翻页、顶部 1–50 页下拉跳页、底部 **50页页码直达轨（Quick Scrubber）**、书签夹藏及阅读探索度实时统计。
 
 2. **第77期生互动式电子学生手册（Interactive Character Dossier）**
@@ -27,7 +70,7 @@
 
 ---
 
-## 全50页纪念周刊目录结构
+## 📖 全50页纪念周刊目录结构
 
 | 特辑卷号 | 页码范围 | 专题内容概要 |
 | :--- | :--- | :--- |
@@ -40,38 +83,22 @@
 
 ---
 
-## 部署为 GitHub Pages 静态网站指南
+## 🚀 静态网站在线访问与部署
 
-本项目已完成 **纯静态网站（Static SPA）** 适配：
-- `vite.config.ts` 已配置 `base: './'`（相对路径打包），同时通过 `resolveAssetUrl()` 处理所有图片资源路径，无论部署在根域名还是 GitHub Pages 子路径（如 `https://<你的用户名>.github.io/<仓库名>/`）均可完美加载所有 CG 与角色立绘。
-- 已内置 `.github/workflows/deploy.yml` 自动化构建与发布工作流，以及 `public/.nojekyll` 防拦截配置。
+### 🔗 在线静态访问地址
+- 静态页面直接访问入口：[**https://582835293.github.io/danganronpa2-commemorative-magazine/**](https://582835293.github.io/danganronpa2-commemorative-magazine/)
 
-### 方式一：通过 GitHub Actions 自动发布到 GitHub Pages（推荐）
-
-当你将代码推送到 GitHub 仓库（`main` 或 `master` 分支）后，只需在 GitHub 网页端开启 Pages 权限即可自动发布：
-
-1. 打开你的 GitHub 仓库页面，点击顶部导航栏的 **Settings（设置）**。
-2. 在左侧菜单栏找到并点击 **Pages**。
-3. 在 **Build and deployment** -> **Source** 下拉菜单中，将默认的 `Deploy from a branch` 切换为 **`GitHub Actions`**。
-4. 点击顶部导航栏的 **Actions** 标签页：
-   - 如果推送时已触发 **Deploy Static Magazine to GitHub Pages** 工作流，等待约 1 分钟即可完成测试、构建与发布。
-   - 你也可以随时点击左侧 **Deploy Static Magazine to GitHub Pages** -> 右侧 **Run workflow** 手动触发部署。
-5. 部署完成后，在 **Settings -> Pages** 页面顶部即可看到生成的静态网站访问链接：
-   ```text
-   https://<你的GitHub用户名>.github.io/<你的仓库名>/
-   ```
-
-### 方式二：同步至 Vercel / Netlify / Cloudflare Pages
-
-如果你希望绑定自定义域名或使用第三方静态托管平台，可直接导入你的 GitHub 仓库并按以下参数配置：
-- **Framework Preset**: `Vite`
-- **Build Command**: `npm run build`
-- **Output Directory**: `dist`
-- **Node.js Version**: `20.x` 或 `22.x`
+### GitHub Actions 持续集成与部署架构
+本项目已完成纯静态 SPA 优化，并内置 `.github/workflows/deploy.yml` 自动化工作流：
+- 每次向 `main` 分支提交代码，GitHub Actions 会自动触发执行：
+  1. 代码检出与 Node.js 22 环境安装；
+  2. 运行 `npm test`（自动化校验50页完整数据与判定逻辑）；
+  3. 运行 `npm run build` 打包构建静态资产至 `dist/`；
+  4. 自动上传产物并发布至 **GitHub Pages**。
 
 ---
 
-## 本地开发与构建命令
+## 💻 本地开发与构建命令
 
 确保本地已安装 **Node.js (v20+ 或 v22+)**，在项目根目录下执行：
 
@@ -94,12 +121,18 @@ npm run preview
 
 ---
 
-## 项目目录结构
+## 📂 项目目录结构
 
 ```text
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml                  # GitHub Pages 自动测试、构建与部署工作流
+├── docs/
+│   └── screenshots/                    # README 实例效果图与实机运行高清截图
+│       ├── 01-magazine-spread-view.png
+│       ├── 02-character-dossier-spread.png
+│       ├── 03-class-trial-interactive-debate.png
+│       └── 04-e-handbook-radar-system.png
 ├── public/
 │   ├── .nojekyll                       # 禁用 GitHub Pages 默认 Jekyll 处理以加速静态资源托管
 │   └── assets/
@@ -117,18 +150,18 @@ npm run preview
 │   │   └── charactersData.ts           # 18名角色完整电子手册数据、五维数值、声优台词与希望碎片文本
 │   ├── utils/
 │   │   ├── magazineLogic.ts            # 跨页计算、页码检索、言弹命中判定与 GitHub Pages 相对路径转换纯函数
-│   │   └── magazineLogic.test.ts       # Node.js 原生单元测试套件（8项核心断言）
+│   │   └── magazineLogic.test.ts       # 单元测试套件（8项核心断言）
 │   ├── App.tsx                         # 主应用工作台、顶部导航、翻页控制栏与50页快速直达轨
 │   ├── index.css                       # 杂志排版字体栈、纸张肌理、中缝书脊阴影与高性能动画样式
 │   └── main.tsx                        # React 应用挂载入口
 ├── index.html                          # 静态网页入口与 Google Fonts 印刷体引入
 ├── vite.config.ts                      # Vite 静态相对路径（base: './'）构建配置
-└── README.md                           # 项目说明与静态网站发布文档
+└── README.md                           # 项目说明、实机效果图与静态网站发布文档
 ```
 
 ---
 
-## 版权与致谢声明
+## ⚖️ 版权与致谢声明
 
 - 本项目所引用的《超级弹丸论破2：再见绝望学园》（*Super Danganronpa 2: Goodbye Despair*）官方实机截图、宣传主视觉图、角色立绘及世界观设定版权均归 **Spike Chunsoft Co., Ltd.** 所有。
 - 本项目仅作为非商业性质的粉丝向互动式电子纪念周刊排版与前端工程展示。
