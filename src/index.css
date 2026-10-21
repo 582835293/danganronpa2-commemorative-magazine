@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: "Noto Serif SC", "Songti SC", Georgia, serif;
+    --font-sans: "Noto Sans SC", "PingFang SC", system-ui, sans-serif;
+    --font-display: "Oswald", "Noto Sans SC", sans-serif;
+    --font-mono: "JetBrains Mono", "Noto Sans SC", "PingFang SC", sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #121114;
+    color: #1C1917;
+    overflow-x: hidden;
+  }
+}
+
+.font-editorial-serif {
+  font-family: var(--font-serif);
+}
+
+.font-editorial-display {
+  font-family: var(--font-display);
+}
+
+.font-editorial-mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Magazine archival paper surface & subtle halftone */
+.magazine-paper {
+  background-color: #FBF9F5;
+  background-image: radial-gradient(rgba(28, 25, 23, 0.045) 1px, transparent 0);
+  background-size: 16px 16px;
+}
+
+.magazine-paper-dark {
+  background-color: #17151A;
+  background-image: radial-gradient(rgba(255, 0, 127, 0.07) 1px, transparent 0);
+  background-size: 14px 14px;
+}
+
+/* Magazine center binding crease preserving #FBF9F5 archival paper base */
+.spine-left-shadow {
+  background-color: #FBF9F5;
+  background-image:
+    linear-gradient(to left, rgba(15, 12, 18, 0.14) 0%, rgba(15, 12, 18, 0.04) 4%, transparent 12%),
+    radial-gradient(rgba(28, 25, 23, 0.045) 1px, transparent 0);
+  background-size: 100% 100%, 16px 16px;
+}
+
+.spine-right-shadow {
+  background-color: #FBF9F5;
+  background-image:
+    linear-gradient(to right, rgba(15, 12, 18, 0.14) 0%, rgba(15, 12, 18, 0.04) 4%, transparent 12%),
+    radial-gradient(rgba(28, 25, 23, 0.045) 1px, transparent 0);
+  background-size: 100% 100%, 16px 16px;
+}
+
+/* Vertical editorial text for Japanese/Chinese magazine sidebars */
+.writing-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* Animated pixel sprite walk bob (compositor-only transform) */
+@keyframes sprite-bob {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.animate-sprite-bob {
+  animation: sprite-bob 0.8s steps(2, end) infinite;
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(1.5deg);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 3.6s ease-in-out infinite;
+}
+
+@keyframes counter-slash {
+  0% {
+    opacity: 0;
+    transform: scale(1.35) rotate(-8deg);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(0.96) rotate(-3deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(-3deg);
+  }
+}
+
+.animate-counter-slash {
+  animation: counter-slash 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-sprite-bob,
+  .animate-float-slow,
+  .animate-counter-slash {
+    animation: none !important;
+  }
+}
+

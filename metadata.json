@@ -1,0 +1,6 @@
+{
+  "name": "超级弹丸论破2：再见绝望学园 纪念周刊 (50页互动电子杂志)",
+  "description": "50页全彩纪念周刊式HTML电子杂志，收录官方游戏CG、16名超高校级学生互动电子手册档案、六大学级裁判推理模拟与全岛地理志。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
